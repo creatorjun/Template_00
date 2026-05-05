@@ -1,29 +1,20 @@
 // src/application/data/skills.js
 
-/** @type {import('../../domain/entities/Skill').SkillGroup[]} */
 export const skills = [
   {
-    label: 'Languages',
-    items: ['C++20', 'Python', 'Rust', 'Dart', 'JavaScript'],
+    category: 'Game Development',
+    items: ['Unreal Engine 5', 'Unity', 'C++', 'C#', 'HLSL / GLSL', 'DirectX 12', 'Vulkan', 'ECS Architecture'],
   },
   {
-    label: 'Frameworks',
-    items: ['FastAPI', 'Flutter', 'Spring Boot', 'React', 'SQLAlchemy'],
+    category: 'Backend',
+    items: ['Node.js', 'TypeScript', 'Express.js', 'FastAPI', 'Python', 'WebSocket', 'REST API', 'Redis'],
   },
   {
-    label: 'Infrastructure',
-    items: ['PostgreSQL', 'Redis', 'MinIO', 'Docker', 'Docker Compose', 'Celery'],
+    category: 'Frontend',
+    items: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'WebGL', 'Chart.js'],
   },
   {
-    label: 'AI / LLM',
-    items: ['LLM Orchestration', 'Multi-Agent', 'RAG', 'OpenRouter', 'Anthropic', 'Ollama'],
-  },
-  {
-    label: 'System',
-    items: ['Win32 API', 'WIMGAPI', 'BCD', 'gVisor', 'SMBIOS'],
-  },
-  {
-    label: 'Architecture',
-    items: ['Clean Architecture', 'DDD', 'MVVM', 'Port & Adapter', 'CQRS'],
+    category: 'Infrastructure & Tools',
+    items: ['AWS', 'Docker', 'Jenkins', 'GitHub Actions', 'CMake', 'Firebase', 'MySQL', 'SQLite'],
   },
 ]

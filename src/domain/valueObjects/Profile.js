@@ -1,19 +1,25 @@
 // src/domain/valueObjects/Profile.js
 
 export const Profile = Object.freeze({
-  name: 'OOO',
-  nameKo: 'OOO',
-  title: 'Software Developer',
-  subtitle: 'C++ · Python · Rust · Dart',
-  description: '시스템 프로그래밍부터 AI 백엔드, 크로스플랫폼 앱까지',
+  name: 'Hong Gildong',
+  nameKo: '홍길동',
+  title: 'Full-Stack Game Developer',
+  subtitle: 'C++ · Unreal · Unity · Node.js · React',
+  description: '게임 엔진 개발부터 서버 백엔드, 웹 프론트까지 아우르는 풀스택 개발자',
   email: 'your-email@example.com',
   github: 'https://github.com/your-github-id',
   location: '서울',
-  status: '구직 중',
+  status: '재직 중',
+  education: {
+    school: '서울대학교',
+    major: '컴퓨터공학과',
+    degree: '학사',
+    period: '2014.03 ~ 2018.02',
+  },
   stats: [
-    { value: '5+', label: '개발 경력 (년)' },
-    { value: '10+', label: '실운영 배포 건수' },
-    { value: '15+', label: '완성 프로젝트' },
-    { value: '2+', label: '오픈소스 퍼블리시' },
+    { value: '7+', label: '개발 경력 (년)' },
+    { value: '3', label: '근무 기업 수' },
+    { value: '20+', label: '완성 프로젝트' },
+    { value: '5+', label: '출시 게임 타이틀' },
   ],
 })
