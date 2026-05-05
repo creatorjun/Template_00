@@ -6,6 +6,7 @@ import About from './presentation/components/About'
 import Career from './presentation/components/Career'
 import Projects from './presentation/components/Projects'
 import Skills from './presentation/components/Skills'
+import CoverLetter from './presentation/components/CoverLetter'
 import Contact from './presentation/components/Contact'
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
         <Career />
         <Projects />
         <Skills />
+        <CoverLetter />
         <Contact />
       </div>
     </PortfolioProvider>

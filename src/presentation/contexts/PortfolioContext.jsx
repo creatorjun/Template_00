@@ -11,6 +11,7 @@ export function PortfolioProvider({ children }) {
     careers: portfolioService.getCareers(),
     projects: portfolioService.getProjects(),
     skills: portfolioService.getSkills(),
+    coverLetter: portfolioService.getCoverLetter(),
   }), [])
 
   return (
