@@ -1,7 +1,7 @@
 // src/presentation/components/About.jsx
 import { useInView } from '../hooks/useInView'
 import { usePortfolio } from '../contexts/PortfolioContext'
-import { ABOUT } from '../../../config'
+import { ABOUT } from '../../config'
 
 export default function About() {
   const { ref, inView } = useInView()
