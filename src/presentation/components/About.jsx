@@ -1,6 +1,7 @@
 // src/presentation/components/About.jsx
 import { useInView } from '../hooks/useInView'
 import { usePortfolio } from '../contexts/PortfolioContext'
+import { ABOUT } from '../../../config'
 
 export default function About() {
   const { ref, inView } = useInView()
@@ -12,23 +13,14 @@ export default function About() {
         <div ref={ref} className={`transition-all duration-700 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <p className="text-xs text-indigo-400 uppercase tracking-widest mb-4 font-mono">About</p>
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-16 leading-tight">
-            단순 코더가 아닌,<br />
-            <span className="text-gray-500">풀스택 시스템 아키텍처.</span>
+            {ABOUT.headline}<br />
+            <span className="text-gray-500">{ABOUT.subheadline}</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-16">
             <div className="space-y-6 text-gray-400 leading-relaxed">
-              <p>
-                소프트웨어 개발에 입문한 이후 C++, Python, Rust, Dart를 습득했습니다.
-                학습에서 그치지 않고 실사용 환경에서 검증된 소프트웨어를 직접 만들고 운영했습니다.
-              </p>
-              <p>
-                XXX에서 인프라 관리 및 시스템 자동화 개발을 담당하였으며,
-                자체 개발한 도구는 누적 N만 건 이상 무결점으로 운영된 경험이 있습니다.
-              </p>
-              <p>
-                모든 프로젝트에 클린 아키텍처와 도메인 주도 설계를 일관되게 적용하며,
-                오픈소스 라이브러리는 PyPI와 pub.dev에 직접 퍼블리시했습니다.
-              </p>
+              {ABOUT.paragraphs.map((p, i) => (
+                <p key={i}>{p}</p>
+              ))}
             </div>
             <div className="grid grid-cols-2 gap-4">
               {profile.stats.map((s) => (
