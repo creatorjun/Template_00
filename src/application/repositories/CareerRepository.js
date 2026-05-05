@@ -1,9 +1,9 @@
 // src/application/repositories/CareerRepository.js
 import { ICareerRepository } from '../../domain/repositories/ICareerRepository'
-import { careers } from '../data/careers'
+import { careersData } from '../../infrastructure/data/careersData'
 
 export class CareerRepository extends ICareerRepository {
   getAll() {
-    return careers
+    return careersData
   }
 }
